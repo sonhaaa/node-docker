@@ -1,0 +1,40 @@
+GET http://localhost:3000/api/v1/posts/
+
+###
+POST http://localhost:3000/api/v1/posts/
+Content-Type: application/json
+
+{
+  "title": "My 2nd post",
+  "body": "Body"
+}
+
+###
+PATCH http://localhost:3000/api/v1/posts/62ffae6dd6ed6816b21d3beb
+Content-Type: application/json
+
+{
+  "title": "My 2nd post updated",
+  "body": "Body"
+}
+
+### 
+DELETE http://localhost:3000/api/v1/posts/62ffae18bd79106bb99f5318
+
+###
+POST http://localhost:3000/api/v1/users/signup
+Content-Type: application/json
+
+{
+  "username": "3",
+  "password": "123"
+}
+
+###
+POST http://localhost:3000/api/v1/users/login
+Content-Type: application/json
+
+{
+  "username": "3",
+  "password": "123"
+}
